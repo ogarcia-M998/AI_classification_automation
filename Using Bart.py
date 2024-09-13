@@ -1,10 +1,10 @@
 import pandas as pd
 from transformers import pipeline
 
-# Specify the full path to your CSV file
-file_path = r"C:\Users\oscar\Documents\Projects\Online Retail Project\online+retail\Online Retail.csv"
+# Specify the full path to the CSV file
+file_path = r"XXX\Online Retail.csv" # Add path to the dataset
 
-# Load your dataset
+# Load the dataset
 df = pd.read_csv(file_path)
 
 # Display the first few rows of the dataframe
@@ -23,7 +23,7 @@ print(df)
 classifier = pipeline("zero-shot-classification", model="facebook/bart-large-mnli")
 
 # Define candidate labels
-candidate_labels = ["utilitarian", "decorative"]
+candidate_labels = ["utilitarian", "decorative"] # Attempting to classify the given products on whether they tend to have utilitarian vs. decorative purposes based on product description (development of training dataset in progress)
 
 
 # Function to classify a product description
