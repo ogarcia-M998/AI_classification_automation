@@ -3,10 +3,10 @@ import torch
 import pandas as pd
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
-# Specify the full path to your CSV file
-file_path = r"C:\Users\oscar\Documents\Projects\Online Retail Project\online+retail\Online Retail.csv"
+# Specify the full path to the CSV file
+file_path = r"XXX\Online Retail.csv" # Insert path to dataset
 
-# Load your dataset
+# Load the dataset
 df = pd.read_csv(file_path)
 
 # Select only the "Description" column and ensure string type
